@@ -1,4 +1,4 @@
-require("nvchad.mappings")
+require "nvchad.mappings"
 
 -- add yours here
 
@@ -62,7 +62,7 @@ map("t", "<esc><esc>", "<C-\\><C-n>")
 
 -- toggle transparency in nvchad
 map("n", "<leader>tt", function()
-	require("base46").toggle_transparency()
+  require("base46").toggle_transparency()
 end, { desc = "toggle transparency" })
 
 -- remove search highlights
@@ -77,4 +77,4 @@ map("n", "<leader>lx", "<CMD>Lazy clean<CR>", { desc = "lazy clean unneeded plug
 map("n", "<leader>ll", "<CMD>Lazy log<CR>", { desc = "lazy view log" })
 map("n", "<leader>lh", "<CMD>Lazy home<CR>", { desc = "lazy open" })
 
-nomap("n", "<A-v>") -- disable the vertical term binding
+map("n", "<A-v>", "<cmd>Grapple select index=2<cr>", { desc = "grapple select second tag" })
