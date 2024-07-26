@@ -16,6 +16,7 @@ return {
 			"python",
 			"rust",
 			"sql",
+			"tsx",
 			"typescript",
 		},
 
