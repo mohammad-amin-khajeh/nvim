@@ -41,6 +41,7 @@ return {
 			"html-lsp",
 			"json-lsp",
 			"lua-language-server",
+			"prettierd",
 			"pyright",
 			"ruff",
 			"shellcheck",
