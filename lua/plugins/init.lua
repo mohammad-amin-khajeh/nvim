@@ -51,8 +51,11 @@ return {
   -- lazygit integration
   {
     "kdheepak/lazygit.nvim",
-    vim.keymap.set("n", "<leader>lg", "<CMD>LazyGit<CR>", { desc = "lazygit launch " }),
-    cmd = "LazyGit",
+    keys = {
+      { mode = "n", "<leader>lgd", "<CMD>LazyGit<CR>", desc = "lazygit launch on inital dir" },
+      { mode = "n", "<leader>lgf", "<CMD>LazyGitCurrentFile<CR>", desc = "lazygit launch on current file dir" },
+    },
+
     -- optional for floating window border decoration
     dependencies = {
       "nvim-lua/plenary.nvim",
