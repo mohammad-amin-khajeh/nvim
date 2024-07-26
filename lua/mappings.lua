@@ -58,7 +58,7 @@ map("i", "<C-v>", "<ESC>pa")
 map("i", "<C-s>", "<CMD>w<CR>")
 
 -- get out of terminal mode
-map("t", "<esc><esc>", "<C-\\><C-n>")
+map("t", "<esc><esc>", "<C-\\><C-n>", { desc = "Terminal mode close" })
 
 -- toggle transparency in nvchad
 map("n", "<leader>tt", function()
