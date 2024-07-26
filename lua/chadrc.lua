@@ -1,7 +1,6 @@
 ---@class ChadrcConfig
 
 return {
-	lsp = { signature = true, semantic_tokens = true },
 
 	ui = {
 		theme = "one_light",
