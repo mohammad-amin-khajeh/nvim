@@ -9,9 +9,9 @@ local options = {
     lua = { "stylua" },
     python = { "ruff" },
     sh = { "shellharden", "shfmt" },
-    zsh = { "shellharden", "shfmt" },
     typescript = { "prettierd" },
     typescriptreact = { "prettierd" },
+    zsh = { "shellharden", "shfmt" },
   },
 
   --[[ format_on_save = {
