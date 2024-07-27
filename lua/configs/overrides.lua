@@ -33,7 +33,6 @@ return {
 			"bacon",
 			"bacon-ls",
 			"bash-language-server",
-			"biome",
 			"clangd",
 			"clangd-format",
 			"css-lsp",
