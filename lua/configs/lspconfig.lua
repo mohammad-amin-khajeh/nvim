@@ -7,6 +7,7 @@ local lspconfig = require "lspconfig"
 local servers = {
   "bacon_ls",
   "bashls",
+  "biome",
   "cssls",
   "emmet_language_server",
   "lua_ls",

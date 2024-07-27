@@ -3,14 +3,14 @@ local options = {
 
   formatters_by_ft = {
     c = { "clang-format" },
-    css = { "prettierd" },
-    html = { "prettierd" },
-    javascript = { "prettierd" },
+    css = { "biome" },
+    html = { "biome" },
+    javascript = { "biome" },
     lua = { "stylua" },
     python = { "ruff" },
     sh = { "shellharden", "shfmt" },
-    typescript = { "prettierd" },
-    typescriptreact = { "prettierd" },
+    typescript = { "biome" },
+    typescriptreact = { "biome" },
     zsh = { "shellharden", "shfmt" },
   },
 
