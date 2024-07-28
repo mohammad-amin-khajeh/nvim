@@ -3,12 +3,6 @@ require "nvchad.mappings"
 -- add yours here
 
 local map = vim.keymap.set
-local nomap = vim.keymap.del
-
---[[ -- some quality of life bindings
-map({ "n", "v" }, "<leader>fm", function()
-	require("conform").format({ lsp_fallback = true })
-end, { desc = "format files" }) ]]
 
 -- center the screen after going up and down with c-d c-u
 map("n", "<C-d>", "<C-d>zz")
@@ -22,10 +16,6 @@ map("n", "J", "mzJ`z")
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
--- split bindings
-map("n", "<leader>\\", "<CMD>vsp<CR>", { desc = "split vertically" })
-map("n", "<leader>-", "<CMD>sp<CR>", { desc = "split horizontally" })
-
 -- go to the first non-whitespace character with 0
 map("n", "0", "_")
 map("n", "_", "0")
@@ -37,12 +27,6 @@ map("n", "<c-s-right>", "<c-w><", { desc = "pane decrease width" })
 map("n", "<c-s-up>", "<c-w>+", { desc = "pane inscrease height" })
 map("n", "<c-s-down>", "<c-w>-", { desc = "pane decrease height" })
 
--- change pane focus
-map("n", "<c-left>", "<c-w>h", { desc = "pane focus left" })
-map("n", "<c-right>", "<c-w>l", { desc = "pane focus right" })
-map("n", "<c-up>", "<c-w>k", { desc = "pane focus up" })
-map("n", "<c-down>", "<c-w>j", { desc = "pane focus down" })
-
 -- move up and down on the wrapped line
 map("n", "<up>", "g<up>")
 map("n", "<down>", "g<down>")
@@ -52,7 +36,6 @@ map("n", "<leader>fx", '<CMD>!chmod +x "%"<CR>', { desc = "make file execultable
 
 -- some emacs bindings in insert mode
 map("i", "<C-a>", "<ESC>I")
-map("i", "<C-v>", "<ESC>pa")
 
 -- save like a normal text editor
 map("i", "<C-s>", "<CMD>w<CR>")
