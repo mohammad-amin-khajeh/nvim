@@ -10,10 +10,6 @@ return {
       ["@comment"] = { italic = true, bold = true },
     },
 
-    --[[ telescope = {
-    style = "bordered",
-  }, ]]
-
     cmp = {
       icons = true,
       lspkind_text = true,
