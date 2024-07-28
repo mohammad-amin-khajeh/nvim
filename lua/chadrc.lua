@@ -2,48 +2,48 @@
 
 return {
 
-	ui = {
-		theme = "one_light",
-		theme_toggle = { "one_light", "one_light" },
+  ui = {
+    theme = "one_light",
+    theme_toggle = { "one_light", "one_light" },
 
-		hl_override = {
-			["@comment"] = { italic = true, bold = true },
-		},
+    hl_override = {
+      ["@comment"] = { italic = true, bold = true },
+    },
 
-		--[[ telescope = {
+    --[[ telescope = {
     style = "bordered",
   }, ]]
 
-		cmp = {
-			icons = true,
-			lspkind_text = true,
-			style = "flat_light",
-		},
+    cmp = {
+      icons = true,
+      lspkind_text = true,
+      style = "flat_light",
+    },
 
-		statusline = {
-			theme = "minimal",
-			separator_style = "round",
-		},
+    statusline = {
+      theme = "minimal",
+      separator_style = "round",
+    },
 
-		nvdash = {
-			load_on_startup = true,
+    nvdash = {
+      load_on_startup = true,
 
-			header = {
-				"                                                                  ",
-				"                                                                  ",
-				"                                                                  ",
-				"                                                                  ",
-				"   ███╗   ███╗███╗   ███╗██████╗       ██╗   ██╗██╗███╗   ███╗    ",
-				"   ████╗ ████║████╗ ████║██╔══██╗      ██║   ██║██║████╗ ████║    ",
-				"   ██╔████╔██║██╔████╔██║██║  ██║█████╗██║   ██║██║██╔████╔██║    ",
-				"   ██║╚██╔╝██║██║╚██╔╝██║██║  ██║╚════╝╚██╗ ██╔╝██║██║╚██╔╝██║    ",
-				"   ██║ ╚═╝ ██║██║ ╚═╝ ██║██████╔╝       ╚████╔╝ ██║██║ ╚═╝ ██║    ",
-				"   ╚═╝     ╚═╝╚═╝     ╚═╝╚═════╝         ╚═══╝  ╚═╝╚═╝     ╚═╝    ",
-				"                                                                  ",
-				"                                                                  ",
-				"                                                                  ",
-				"                                                                  ",
-			},
-		},
-	},
+      header = {
+        "                                                                  ",
+        "                                                                  ",
+        "                                                                  ",
+        "                                                                  ",
+        "   ███╗   ███╗███╗   ███╗██████╗       ██╗   ██╗██╗███╗   ███╗    ",
+        "   ████╗ ████║████╗ ████║██╔══██╗      ██║   ██║██║████╗ ████║    ",
+        "   ██╔████╔██║██╔████╔██║██║  ██║█████╗██║   ██║██║██╔████╔██║    ",
+        "   ██║╚██╔╝██║██║╚██╔╝██║██║  ██║╚════╝╚██╗ ██╔╝██║██║╚██╔╝██║    ",
+        "   ██║ ╚═╝ ██║██║ ╚═╝ ██║██████╔╝       ╚████╔╝ ██║██║ ╚═╝ ██║    ",
+        "   ╚═╝     ╚═╝╚═╝     ╚═╝╚═════╝         ╚═══╝  ╚═╝╚═╝     ╚═╝    ",
+        "                                                                  ",
+        "                                                                  ",
+        "                                                                  ",
+        "                                                                  ",
+      },
+    },
+  },
 }
