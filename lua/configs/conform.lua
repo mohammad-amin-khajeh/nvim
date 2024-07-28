@@ -6,6 +6,7 @@ local options = {
     css = { "biome" },
     html = { "biome" },
     javascript = { "biome" },
+    json = { "biome" },
     lua = { "stylua" },
     python = { "ruff" },
     sh = { "shellharden", "shfmt" },
