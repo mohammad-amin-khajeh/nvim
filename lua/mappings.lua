@@ -4,12 +4,14 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
--- center the screen after going up and down with c-d c-u
+-- center the screen after going half page up/down
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 
 -- quit like a normal text editor
 map({ "n", "i", "v" }, "<C-q>", "<CMD>qa!<CR>")
+
+-- append the next line to the current line but don't change cursor position
 map("n", "J", "mzJ`z")
 
 -- center the screen after going to the next/prev search result
@@ -31,7 +33,7 @@ map("n", "<c-s-down>", "<c-w>-", { desc = "pane decrease height" })
 map("n", "<up>", "g<up>")
 map("n", "<down>", "g<down>")
 
--- make file execultable
+-- make current file execultable
 map("n", "<leader>fx", '<CMD>!chmod +x "%"<CR>', { desc = "make file execultable" })
 
 -- some emacs bindings in insert mode
@@ -60,4 +62,5 @@ map("n", "<leader>lx", "<CMD>Lazy clean<CR>", { desc = "lazy clean unneeded plug
 map("n", "<leader>ll", "<CMD>Lazy log<CR>", { desc = "lazy view log" })
 map("n", "<leader>lh", "<CMD>Lazy home<CR>", { desc = "lazy open" })
 
+-- fix race condition
 map("n", "<A-v>", "<cmd>Grapple select index=2<cr>", { desc = "grapple select second tag" })
