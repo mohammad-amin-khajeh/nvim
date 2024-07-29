@@ -14,8 +14,6 @@ return {
 
   ui = {
     cmp = {
-      icons = true,
-      lspkind_text = true,
       style = "flat_light",
     },
 
