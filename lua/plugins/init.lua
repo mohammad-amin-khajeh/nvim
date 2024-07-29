@@ -239,4 +239,11 @@ return {
       require "configs.highlight_colors"
     end,
   },
+
+  -- autotag smoother web development
+  {
+    "windwp/nvim-ts-autotag",
+    event = "InsertEnter",
+    config = true,
+  },
 }
