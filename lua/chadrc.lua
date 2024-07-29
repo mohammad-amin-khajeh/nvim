@@ -2,14 +2,17 @@
 
 return {
 
-  ui = {
+  base46 = {
+
     theme = "one_light",
     theme_toggle = { "one_light", "one_light" },
 
     hl_override = {
       ["@comment"] = { italic = true, bold = true },
     },
+  },
 
+  ui = {
     cmp = {
       icons = true,
       lspkind_text = true,
