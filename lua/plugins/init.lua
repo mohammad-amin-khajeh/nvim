@@ -246,4 +246,12 @@ return {
     event = "InsertEnter",
     config = true,
   },
+
+  -- reset all git hunks
+  {
+    "lewis6991/gitsigns.nvim",
+    opts = function()
+      require "configs.gitsigns"
+    end,
+  },
 }
