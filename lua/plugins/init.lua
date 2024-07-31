@@ -259,7 +259,7 @@ return {
   {
     "gbprod/substitute.nvim",
     keys = { { "s" }, { "S" } },
-    opts = function()
+    config = function()
       require "configs.substitute"
     end,
   },
