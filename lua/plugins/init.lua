@@ -254,4 +254,13 @@ return {
       require "configs.gitsigns"
     end,
   },
+
+  -- add a substitute motion
+  {
+    "gbprod/substitute.nvim",
+    keys = { { "s" }, { "S" } },
+    opts = function()
+      require "configs.substitute"
+    end,
+  },
 }
