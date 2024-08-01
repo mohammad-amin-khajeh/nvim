@@ -262,4 +262,12 @@ return {
       require "configs.substitute"
     end,
   },
+
+  -- highlight word under cursor
+  {
+    "echasnovski/mini.cursorword",
+    event = "BufReadPost",
+    version = false,
+    config = true,
+  },
 }
