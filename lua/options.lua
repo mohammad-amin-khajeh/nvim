@@ -20,6 +20,7 @@ g.omni_sql_no_default_maps = 1
 
 -- fix css delimiter
 autocmd("InsertEnter", {
+  pattern = { "*.css", ".html" },
   command = "set iskeyword=@,48-57,_,192-255",
 })
 
