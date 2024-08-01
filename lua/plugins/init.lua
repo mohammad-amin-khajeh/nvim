@@ -159,7 +159,7 @@ return {
   -- extend the d/c /i/a motion with treesitter
   {
     "echasnovski/mini.ai",
-    keys = { "c", "d", "y", "v" },
+    keys = { "c", "d", "y", "v", "s" },
     config = function()
       require("mini.ai").setup {
         search_method = "cover_or_next",
