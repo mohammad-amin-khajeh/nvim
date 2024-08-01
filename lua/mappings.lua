@@ -58,7 +58,7 @@ map("n", "<Esc>", "<CMD>noh<CR>", { desc = "general clear highlights" })
 map("n", "<a-f>", "*")
 
 -- search backwards for the word under the cursor
-map("n", "<a-g>", "*NN")
+map("n", "<a-g>", "#")
 
 -- lazy
 map("n", "<leader>lu", "<CMD>Lazy update<CR>", { desc = "lazy update plugins" })
