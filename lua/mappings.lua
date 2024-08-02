@@ -55,10 +55,10 @@ end, { desc = "toggle transparency" })
 map("n", "<Esc>", "<CMD>noh<CR>", { desc = "general clear highlights" })
 
 -- search forward for the word under the cursor
-map("n", "<a-f>", "*")
+map("n", "<a-g>", "*zz")
 
 -- search backwards for the word under the cursor
-map("n", "<a-g>", "#")
+map("n", "<a-f>", "#zz")
 
 -- lazy
 map("n", "<leader>lu", "<CMD>Lazy update<CR>", { desc = "lazy update plugins" })
