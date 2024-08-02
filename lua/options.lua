@@ -27,7 +27,7 @@ autocmd("InsertEnter", {
 -- highlight cursor position
 o.cursorlineopt = "both"
 
--- enabling inlay hints(requires nvim 0.10+)
+-- enabling inlay hints
 vim.lsp.inlay_hint.enable()
 
 -- fix cursor turning into a block after leaving neovim
