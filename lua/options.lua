@@ -41,11 +41,3 @@ autocmd("BufWinEnter", {
     vim.api.nvim_exec('silent! normal! g`"', false)
   end,
 })
-
-if g.neovide then
-  -- o.guifont = "caskaydiacove nf:8"
-  g.neovide_cursor_vfx_mode = "torpedo"
-  g.neovide_scroll_animation_length = 0.4
-  g.neovide_remember_window_size = true
-  g.neovide_cursor_animation_length = 0.13
-end
