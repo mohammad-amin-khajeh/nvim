@@ -37,7 +37,6 @@ autocmd("VimLeave", {
 
 -- go back to the last position upon opening a file
 autocmd("BufWinEnter", {
-  pattern = { "*" },
   callback = function()
     vim.api.nvim_exec('silent! normal! g`"', false)
   end,
