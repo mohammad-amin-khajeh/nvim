@@ -266,4 +266,13 @@ return {
     version = false,
     config = true,
   },
+
+  -- enhance word motions
+  {
+    "backdround/neowords.nvim",
+    keys = { "w", "b", "e", "ge" },
+    config = function()
+      require "configs.neowords"
+    end,
+  },
 }
