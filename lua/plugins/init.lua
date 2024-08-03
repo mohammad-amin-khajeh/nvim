@@ -93,10 +93,6 @@ return {
       { "gb", mode = { "n", "o" }, desc = "comment toggle blockwise" },
       { "gb", mode = "x", desc = "comment toggle blockwise (visual)" },
     },
-    config = function(_, opts)
-      require("Comment").setup(opts)
-    end,
-
     opts = function()
       require "configs.comment"
     end,
