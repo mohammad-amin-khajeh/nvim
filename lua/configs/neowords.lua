@@ -9,7 +9,7 @@ local subword_hops = neowords.get_word_hops(
   "\\v[[:digit:]]+"
 )
 
-vim.keymap.set({ "n", "x", "o" }, "w", subword_hops.forward_start)
-vim.keymap.set({ "n", "x", "o" }, "e", subword_hops.forward_end)
-vim.keymap.set({ "n", "x", "o" }, "b", subword_hops.backward_start)
-vim.keymap.set({ "n", "x", "o" }, "ge", subword_hops.backward_end)
+vim.keymap.set({ "n", "x" }, "w", subword_hops.forward_start)
+vim.keymap.set({ "n", "x" }, "e", subword_hops.forward_end)
+vim.keymap.set({ "n", "x" }, "b", subword_hops.backward_start)
+vim.keymap.set({ "n", "x" }, "ge", subword_hops.backward_end)
