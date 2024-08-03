@@ -71,3 +71,12 @@ map("n", "<leader>lh", "<CMD>Lazy home<CR>", { desc = "lazy open" })
 
 -- fix race condition
 map("n", "<A-v>", "<cmd>Grapple select index=2<cr>", { desc = "grapple select second tag" })
+
+-- move buffers around in nvchad
+map("n", "<c-a-right>", function()
+  require("nvchad.tabufline").move_buf(1)
+end, { desc = "tabufline move buffer right" })
+
+map("n", "<c-a-left>", function()
+  require("nvchad.tabufline").move_buf(-1)
+end, { desc = "tabufline move buffer left" })
