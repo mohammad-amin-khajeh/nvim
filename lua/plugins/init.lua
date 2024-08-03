@@ -36,7 +36,7 @@ return {
     ft = "norg",
     dependencies = { "luarocks.nvim" },
     config = function()
-      return require "configs.neorg"
+      require "configs.neorg"
     end,
   },
 
