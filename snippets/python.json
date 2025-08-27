@@ -1,0 +1,14 @@
+{
+  "reversed range loop": {
+    "prefix": "forrr",
+    "body": [
+      "for ${1:i} in range(len(${2:List}) - 1, -1, -1):\n\t"
+    ]
+  },
+  "leetcode solution": {
+    "prefix": "lcsol",
+    "body": [
+      "print(Solution().${1:function_name})"
+    ]
+  }
+}

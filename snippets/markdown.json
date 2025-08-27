@@ -1,0 +1,32 @@
+{
+  "admonition shortcode": {
+    "prefix": "admonition",
+    "body": [
+      "{{admonition(type='${1:info}' text='${2}')}}"
+    ]
+  },
+  "full width image shortcode": {
+    "prefix": "full_width_image",
+    "body": [
+      "{{full_width_image(src='${1}')}}"
+    ]
+  },
+  "spoiler shortcode": {
+    "prefix": "spoiler",
+    "body": [
+      "{{spoiler(text='${1}')}}"
+    ]
+  },
+  "video shortcode": {
+    "prefix": "video",
+    "body": [
+      "{{video(src='${1}' muted=${2:false} autoplay=${3:true})}}"
+    ]
+  },
+  "linked image shortcode": {
+    "prefix": "put_image",
+    "body": [
+      "{{put_image(url='${1}' caption='${2}' width='${3:700}')}}"
+    ]
+  }
+}
