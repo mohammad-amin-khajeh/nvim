@@ -9,13 +9,10 @@ return {
 
   opts = {
     bigfile = { enabled = true },
-    image = { enabled = false },
     input = { enabled = true },
-    quickfile = { enabled = true },
     dashboard = { enabled = true, example = "compact_files" },
     statuscolumn = { enabled = true },
     notifier = { enabled = true, timeout = 3000 },
-    words = { enabled = false },
     picker = { enabled = true },
     terminal = { enabled = false, shell = "zsh" },
 
