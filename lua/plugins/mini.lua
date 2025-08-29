@@ -1,6 +1,6 @@
 ---@diagnostic disable: undefined-global
 return {
-  "echasnovski/mini.nvim",
+  "nvim-mini/mini.nvim",
   event = "VeryLazy",
 
   config = function()
