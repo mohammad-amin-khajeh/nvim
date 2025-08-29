@@ -37,6 +37,7 @@ vim.o.updatetime = 250 -- interval for writing swap file to disk, also used by g
 
 vim.o.winborder = "single" -- have borders around some floating windows
 vim.o.showmode = false -- don't show current mode
+vim.o.showcmd = false -- don't show current sequence of keys
 vim.o.scrolloff = 10 -- always keep at least 10 lines above and below the cursor
 vim.o.breakindent = true -- Every wrapped line will continue visually indented (same amount of space as the beginning of that line)
 vim.o.linebreak = true -- don't break words at the end of lines when wrapping
