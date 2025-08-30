@@ -51,7 +51,10 @@ map("n", "[w", function()
   vim.diagnostic.jump({ count = -1, severity = vim.diagnostic.severity.WARN })
 end, { desc = "Previous Warning" })
 
-map("n", "<Esc>", function()
+map({ "n", "o" }, "<Esc>", function()
+  if require("mini.jump").state.jumping then
+    require("mini.jump").stop_jumping()
+  end
   if vim.snippet and vim.snippet.active() then
     vim.snippet.stop()
   else
