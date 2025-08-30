@@ -144,6 +144,8 @@ return {
     { "<leader>e", function() MiniFiles.open(vim.api.nvim_buf_get_name(0)) end, desc = "toggle mini files in buffer's directory" },
     { "<leader>E", function() MiniFiles.open() end, desc = "toggle mini files" },
     { "sas", "sa_", desc = "surround whole line", remap = true },
+    { "saS", "sa$", desc = "surround till the end of the line", remap = true },
+    { "gR", "gr$", desc = "replace till the end of the line", remap = true },
   },
   -- stylua: ignore end
 }
