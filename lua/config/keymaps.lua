@@ -1,7 +1,13 @@
 local map = vim.keymap.set
 
-map("n", "<S-left>", "<CMD>bp<CR>", { silent = true, desc = "go to previous buffer" })
-map("n", "<S-right>", "<CMD>bn<CR>", { silent = true, desc = "go to next buffer" })
+-- buffer bindings
+map("n", "<a-x>", "<CMD>bd<CR>", { desc = "delete buffer" })
+map("n", "<leader>bd", "<CMD>bd<CR>", { desc = "delete buffer" })
+map("n", "<leader>a", "<CMD>b#<CR>", { desc = "switch to alternative file/buffer" })
+map("n", "<S-right>", "<CMD>bn<CR>", { desc = "go to next buffer" })
+map("n", "<S-left>", "<CMD>bp<CR>", { desc = "go to previous buffer" })
+
+-- quality of life
 map("n", "<c-d>", "<c-d>zz")
 map("n", "<c-u>", "<c-u>zz")
 map("n", "n", "nzz")
@@ -10,23 +16,22 @@ map("x", ">", ">gv")
 map("x", "<", "<gv")
 map("i", "<c-a>", "<c-o>0")
 map("i", "<c-e>", "<c-o>$")
-map("n", "<leader>a", "<CMD>b#<CR>", { silent = true, desc = "switch to alternative file/buffer" })
-map("n", "<leader>bd", "<CMD>bd<CR>", { silent = true, desc = "delete buffer" })
-map("n", "<a-x>", "<CMD>bd<CR>", { silent = true, desc = "delete buffer" })
 map("n", "<m-g>", "*")
 map("n", "<m-f>", "#")
 map({ "n", "x" }, "M", "%")
 map({ "n", "x" }, "s", "<nop>")
 map({ "n", "x" }, "S", "<nop>")
 map("n", "gh", "<nop>")
-map("n", "gR", "<CMD>norm gr$<CR>", { desc = "replace till the end of the line" })
 map("n", "<C-s>", "<CMD>silent update<CR>", { desc = "save file" })
 
+-- lsp
 map("n", "<leader>cr", vim.lsp.buf.rename, { desc = "lsp rename" })
 map("n", "<leader>rr", vim.lsp.buf.references, { desc = "lsp references" })
 map({ "n", "x" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "lsp code actions" })
+
 map("n", "<leader>mk", "<cmd>make<CR>", { desc = "run make" })
 
+-- plugin manager bindings
 map("n", "<leader>lu", "<CMD>Lazy update<CR>", { desc = "lazy update plugins" })
 map("n", "<leader>ls", "<CMD>Lazy sync<CR>", { desc = "lazy sync plugins" })
 map("n", "<leader>li", "<CMD>Lazy install<CR>", { desc = "lazy install missing plugins" })
@@ -35,6 +40,7 @@ map("n", "<leader>lx", "<CMD>Lazy clean<CR>", { desc = "lazy clean unneeded plug
 map("n", "<leader>ll", "<CMD>Lazy log<CR>", { desc = "lazy view log" })
 map("n", "<leader>lh", "<CMD>Lazy home<CR>", { desc = "lazy open" })
 
+-- diagnostics
 map("n", "]e", function()
   vim.diagnostic.jump({ count = 1, severity = vim.diagnostic.severity.ERROR })
 end, { desc = "Next Error" })
@@ -51,6 +57,7 @@ map("n", "[w", function()
   vim.diagnostic.jump({ count = -1, severity = vim.diagnostic.severity.WARN })
 end, { desc = "Previous Warning" })
 
+-- mroe finctional escape
 map({ "n", "o" }, "<Esc>", function()
   if require("mini.jump").state.jumping then
     require("mini.jump").stop_jumping()
@@ -62,6 +69,7 @@ map({ "n", "o" }, "<Esc>", function()
   end
 end, { silent = true })
 
+-- quickfix list
 map("n", "<leader>qt", function()
   local qf_open = false
   for _, win in ipairs(vim.api.nvim_list_wins()) do
