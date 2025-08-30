@@ -12,7 +12,7 @@ return {
     require("mini.pairs").setup()
     require("mini.splitjoin").setup({ mappings = { toggle = "sj" } })
     require("mini.surround").setup({
-      search_method = "cover_or_nearest",
+      search_method = "cover_or_next",
       n_lines = 1000,
       custom_surroundings = {
         c = {
