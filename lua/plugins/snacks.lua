@@ -49,7 +49,7 @@ return {
     { "<leader>sB",      function() Snacks.picker.grep_buffers() end,                                 desc = "Grep Open Buffers" },
     -- search
     { '<leader>s"',      function() Snacks.picker.registers() end,                                    desc = "Registers" },
-    { "<leader>s'",      function() Snacks.picker.marks() end,                                        desc = "Registers" },
+    { "<leader>s'",      function() Snacks.picker.marks() end,                                        desc = "Marks" },
     { '<leader>s/',      function() Snacks.picker.search_history() end,                               desc = "Search History" },
     { "<leader>fD",      function() Snacks.picker.diagnostics() end,                                  desc = "Diagnostics" },
     { "<leader>fd",      function() Snacks.picker.diagnostics_buffer() end,                           desc = "Buffer Diagnostics" },
