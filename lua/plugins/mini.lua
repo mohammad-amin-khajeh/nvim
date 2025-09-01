@@ -99,6 +99,9 @@ return {
         { mode = "n", keys = "<Leader>" },
         { mode = "x", keys = "<Leader>" },
 
+        -- Window commands
+        { mode = "n", keys = "<C-w>" },
+
         -- `g` key
         { mode = "n", keys = "g" },
         { mode = "x", keys = "g" },
@@ -129,12 +132,12 @@ return {
       },
 
       clues = {
-        -- Enhance this by adding descriptions for <Leader> mapping groups
         miniclue.gen_clues.g(),
         miniclue.gen_clues.marks(),
         miniclue.gen_clues.registers(),
-        miniclue.gen_clues.z(),
         miniclue.gen_clues.square_brackets(),
+        miniclue.gen_clues.windows(),
+        miniclue.gen_clues.z(),
       },
     })
   end,
