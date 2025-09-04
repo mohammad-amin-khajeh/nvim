@@ -6,3 +6,5 @@ vim.b.minisurround_config = {
     },
   },
 }
+
+vim.bo.makeprg = "python '%'"
