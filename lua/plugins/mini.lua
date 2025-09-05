@@ -5,7 +5,6 @@ return {
 
   config = function()
     require("mini.ai").setup({ n_lines = 1000 })
-    require("mini.git").setup()
     require("mini.icons").setup()
     require("mini.jump").setup({ delay = { highlight = 0 } })
     require("mini.operators").setup()
