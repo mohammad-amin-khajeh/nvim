@@ -6,7 +6,7 @@ return {
   config = function()
     require("mini.ai").setup({ n_lines = 1000 })
     require("mini.icons").setup()
-    require("mini.jump").setup({ delay = { highlight = 0 } })
+    require("mini.jump").setup({ delay = { highlight = 10 ^ 9 } })
     require("mini.operators").setup()
     require("mini.pairs").setup()
     require("mini.splitjoin").setup({ mappings = { toggle = "sj" } })
