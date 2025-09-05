@@ -59,9 +59,6 @@ end, { desc = "Previous Warning" })
 
 -- mroe finctional escape
 map({ "n", "o" }, "<Esc>", function()
-  if require("mini.jump").state.jumping then
-    require("mini.jump").stop_jumping()
-  end
   if vim.snippet and vim.snippet.active() then
     vim.snippet.stop()
   else
