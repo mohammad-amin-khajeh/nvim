@@ -31,11 +31,6 @@ return {
       },
     },
 
-    signature = {
-      enabled = true,
-      trigger = { enabled = false },
-    },
-
     appearance = { nerd_font_variant = "normal" },
     sources = {
       default = { "lsp", "path", "snippets", "buffer" },
