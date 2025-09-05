@@ -12,6 +12,8 @@ return {
           "cpp",
           "lua",
           "make",
+          "markdown",
+          "markdown_inline",
           "python",
           "sxhkdrc",
           "typst",
