@@ -21,6 +21,10 @@ map({ "n", "x" }, "M", "%")
 map({ "n", "x" }, "s", "<nop>")
 map({ "n", "x" }, "S", "<nop>")
 map("n", "gh", "<nop>")
+map("n", "<c-up>", "<c-w>+")
+map("n", "<c-down>", "<c-w>-")
+map("n", "<c-left>", "3<c-w><")
+map("n", "<c-right>", "3<c-w>>")
 map("n", "<C-s>", "<CMD>silent update<CR>", { desc = "save file" })
 
 -- lsp
