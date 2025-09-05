@@ -60,7 +60,7 @@ map("n", "[w", function()
   vim.diagnostic.jump({ count = -1, severity = vim.diagnostic.severity.WARN })
 end, { desc = "Previous Warning" })
 
--- mroe finctional escape
+-- more functional escape
 map({ "n", "o" }, "<Esc>", function()
   if vim.snippet and vim.snippet.active() then
     vim.snippet.stop()
