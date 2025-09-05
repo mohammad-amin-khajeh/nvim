@@ -38,7 +38,7 @@ return {
 
     require("mini.files").setup({
       mappings = { go_out = "H", go_out_plus = "..", go_in = "<CR>" },
-      windows = { preview = true },
+      windows = { preview = true, width_preview = 65 },
       options = { use_as_default_explorer = true },
     })
 
