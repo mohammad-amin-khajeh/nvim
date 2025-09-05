@@ -23,6 +23,19 @@ return {
       },
     })
 
+    -- Open path with system default handler (useful for non-text files)
+    local ui_open = function()
+      vim.ui.open(MiniFiles.get_fs_entry().path)
+    end
+
+    vim.api.nvim_create_autocmd("User", {
+      pattern = "MiniFilesBufferCreate",
+      callback = function(args)
+        local b = args.data.buf_id
+        vim.keymap.set("n", "gX", ui_open, { buffer = b, desc = "OS open" })
+      end,
+    })
+
     require("mini.files").setup({
       mappings = { go_out = "H", go_out_plus = "..", go_in = "<CR>" },
       windows = { preview = true },
