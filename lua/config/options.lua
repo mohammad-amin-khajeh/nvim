@@ -1,5 +1,4 @@
--- -- general options
--- vim.o.completeopt = "menu,menuone,popup,fuzzy" -- modern completion menu
+-- general options
 
 vim.o.foldenable = true -- enable fold
 vim.o.foldlevel = 99 -- start editing with all folds opened
@@ -7,11 +6,10 @@ vim.o.foldmethod = "expr" -- use tree-sitter for folding method
 vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 
 vim.o.termguicolors = true -- enable rgb colors
-vim.o.cursorline = true -- enable cursor line
 
+vim.o.cursorline = true -- enable cursor line
 vim.o.number = true -- enable line number
 vim.o.relativenumber = true -- and relative line number
-
 vim.o.signcolumn = "yes" -- always show sign column
 
 vim.o.pumheight = 10 -- max height of completion menu
@@ -20,8 +18,8 @@ vim.opt.diffopt:append("linematch:60") -- second stage diff to align lines
 
 vim.o.confirm = true -- show dialog for unsaved file(s) before quit
 vim.o.swapfile = false -- disable swap file
-vim.o.backup = false -- dont create backups
-vim.o.writebackup = false -- dont create backups before writing
+vim.o.backup = false -- don't create backups
+vim.o.writebackup = false -- don't create backups before writing
 vim.o.undofile = true -- enable persistent undo
 vim.o.undolevels = 10000 -- 10x more undo levels
 
@@ -33,7 +31,6 @@ vim.o.tabstop = 2 -- tab width
 vim.o.shiftwidth = 0 -- 0 to follow the 'tabstop' value
 vim.o.softtabstop = 2 -- soft-tab width
 vim.o.expandtab = true -- use spaces instead of tabs
-vim.o.updatetime = 250 -- interval for writing swap file to disk, also used by gitsigns
 
 vim.o.winborder = "single" -- have borders around some floating windows
 vim.o.showmode = false -- don't show current mode
