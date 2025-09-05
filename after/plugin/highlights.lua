@@ -3,13 +3,13 @@
 local bg = "#000000"
 local alt_bg = "#0f0f0f"
 
-vim.cmd.highlight("BlinkCmpMenu guibg=" .. bg)
 vim.cmd.highlight("BlinkCmpDoc guibg=" .. bg)
 vim.cmd.highlight("BlinkCmpDocBorder guibg=" .. bg)
-vim.cmd.highlight("BlinkCmpSignatureHelp guibg=" .. bg)
-vim.cmd.highlight("BlinkCmpSignatureHelpBorder guibg=" .. bg)
+vim.cmd.highlight("BlinkCmpMenu guibg=" .. bg)
 vim.cmd.highlight("BlinkCmpMenuBorder guibg=" .. bg)
 vim.cmd.highlight("BlinkCmpMenuSelection guibg=" .. alt_bg)
+vim.cmd.highlight("BlinkCmpSignatureHelp guibg=" .. bg)
+vim.cmd.highlight("BlinkCmpSignatureHelpBorder guibg=" .. bg)
 vim.cmd.highlight("CursorLine guibg=" .. alt_bg)
 vim.cmd.highlight("EndOfBuffer guifg=" .. bg)
 vim.cmd.highlight("FloatBorder guibg=" .. bg)
@@ -31,4 +31,5 @@ vim.cmd.highlight("SnacksPickerInputBorder guibg=" .. bg)
 vim.cmd.highlight("SnacksPickerListCursorLine guibg=" .. alt_bg)
 vim.cmd.highlight("SnacksPickerPreviewCursorLine guibg=" .. alt_bg)
 vim.cmd.highlight("TreesitterContext guibg=" .. alt_bg)
+vim.cmd.highlight("TreesitterContextLineNumber guifg=orange gui=bold")
 vim.cmd.highlight("statusline guibg=" .. bg)
