@@ -16,6 +16,7 @@ return {
       custom_surroundings = {
         c = {
           output = { left = "{ ", right = " }" },
+          input = { "%b{}", "^.().*().$" },
         },
         C = {
           output = { left = "{", right = "}" },
