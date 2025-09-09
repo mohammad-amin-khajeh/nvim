@@ -34,7 +34,7 @@ return {
     -- find
     { "<leader>fb",      function() Snacks.picker.buffers({ layout = 'select' }) end,                 desc = "Buffers" },
     { "<leader>fc",      function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end,      desc = "Find Config File" },
-    { "<leader>ff",      function() Snacks.picker.files({ layout = 'select' }) end,                   desc = "Find Files" },
+    { "<leader>ff",      function() Snacks.picker.files() end,                                        desc = "Find Files" },
     { "<leader>fr",      function() Snacks.picker.recent({ layout = 'select' }) end,                  desc = "Recent" },
     -- git
     { "<leader>gb",      function() Snacks.picker.git_branches({ cwd = buffer_dir }) end,             desc = "Git Branches" },
