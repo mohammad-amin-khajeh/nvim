@@ -11,6 +11,7 @@ vim.o.cursorline = true -- enable cursor line
 vim.o.number = true -- enable line number
 vim.o.relativenumber = true -- and relative line number
 vim.o.signcolumn = "yes" -- always show sign column
+vim.o.fillchars = "eob: " -- disable end of buffer tildes
 
 vim.o.pumheight = 10 -- max height of completion menu
 
