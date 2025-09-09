@@ -4,7 +4,21 @@ return {
   event = "VeryLazy",
 
   config = function()
-    require("mini.ai").setup({ n_lines = 1000 })
+    require("mini.ai").setup({
+      n_lines = 1000,
+
+      custom_textobjects = {
+        C = { "%b{}", "^.().*().$" },
+        g = function()
+          local from = { line = 1, col = 1 }
+          local to = {
+            line = vim.fn.line("$"),
+            col = math.max(vim.fn.getline("$"):len(), 1),
+          }
+          return { from = from, to = to }
+        end,
+      },
+    })
     require("mini.icons").setup()
     require("mini.jump").setup({ delay = { highlight = 10 ^ 9 } })
     require("mini.operators").setup()
