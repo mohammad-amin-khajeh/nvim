@@ -15,10 +15,13 @@ return {
     notifier = { enabled = true, timeout = 3000 },
     picker = { enabled = true },
     terminal = { enabled = false, shell = "zsh" },
+    zen = { toggles = { dim = false } },
 
     styles = {
-      notification = {
-        -- wo = { wrap = true } -- Wrap notifications
+      zen = {
+        minimal = true,
+        width = 100,
+        backdrop = { transparent = false },
       },
     },
   },
@@ -67,6 +70,7 @@ return {
     { "<leader>fs",      function() Snacks.picker.lsp_symbols() end,                                  desc = "LSP Symbols" },
     -- Other
     { "<leader>.",       function() Snacks.scratch() end,                                             desc = "Toggle Scratch Buffer" },
+    { "<leader>z",       function() Snacks.zen() end,                                                 desc = "Toggle zen" },
     { "<leader>S",       function() Snacks.scratch.select() end,                                      desc = "Select Scratch Buffer" },
     { "<leader>n",       function() Snacks.notifier.show_history() end,                               desc = "Notification History" },
     { "<leader>cR",      function() Snacks.rename.rename_file() end,                                  desc = "Rename File" },
