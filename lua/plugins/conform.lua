@@ -33,6 +33,7 @@ return {
       sh = { "shfmt", "shellcheck" },
       zsh = { "shfmt", "shellcheck" },
       -- javascript = { "prettierd", "prettier", stop_after_first = true },
+      markdown = { "prettierd", "prettier", stop_after_first = true },
     },
 
     -- Set up format-on-save
