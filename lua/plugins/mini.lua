@@ -20,7 +20,10 @@ return {
       },
     })
     require("mini.icons").setup()
-    require("mini.jump").setup({ delay = { highlight = 10 ^ 9 } })
+    require("mini.jump").setup({
+      delay = { highlight = 10 ^ 9 },
+      mappings = { repeat_jump = "" },
+    })
     require("mini.operators").setup()
     require("mini.pairs").setup()
     require("mini.splitjoin").setup({ mappings = { toggle = "sj" } })
