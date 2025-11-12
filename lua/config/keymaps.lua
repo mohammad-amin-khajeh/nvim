@@ -2,6 +2,7 @@ local map = vim.keymap.set
 
 -- buffer bindings
 map("n", "<a-x>", "<CMD>bd<CR>", { desc = "delete buffer" })
+map("n", "<leader>d", "<CMD>bd<CR>", { desc = "delete buffer" })
 map("n", "<leader>a", "<CMD>b#<CR>", { desc = "switch to alternative file/buffer" })
 map("n", "<S-right>", "<CMD>bn<CR>", { desc = "go to next buffer" })
 map("n", "<S-left>", "<CMD>bp<CR>", { desc = "go to previous buffer" })
@@ -20,6 +21,8 @@ map("n", "<m-f>", "#zz")
 map({ "n", "x" }, "M", "%")
 map({ "n", "x" }, "s", "<nop>")
 map({ "n", "x" }, "S", "<nop>")
+map({ "n", "x" }, ";", ":")
+map({ "n", "x" }, ":", ";")
 map("n", "gh", "<nop>")
 map("n", "<c-up>", "<c-w>+")
 map("n", "<c-down>", "<c-w>-")
