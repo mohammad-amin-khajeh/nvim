@@ -19,11 +19,18 @@ return {
 
       menu = {
         auto_show = false,
-        draw = { treesitter = { "lsp" } },
+        draw = {
+          treesitter = { "lsp" },
+          columns = {
+            { "label", "label_description" },
+            { "kind_icon", "kind" },
+          },
+        },
       },
     },
 
     appearance = { nerd_font_variant = "normal" },
+
     sources = {
       default = { "lsp", "path", "snippets", "buffer" },
     },
