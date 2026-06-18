@@ -1,3 +1,13 @@
+# Archived Neovim Configuration
+
+> **This configuration is no longer maintained.**
+
+I have moved my Neovim setup to a new home. For my current, up-to-date configuration, please visit:
+
+## [mohammad-amin-khajeh/lazyvim](https://github.com/mohammad-amin-khajeh/lazyvim/)
+
+The above-mentioned repository features a more robust setup built on top of [LazyVim](https://www.lazyvim.org/) for ease of maintenance, with additional quality-of-life improvements.
+
 # speedy and functional neovim config(25~40 ms startup time)
 <img width="1920" height="1080" alt="2025-08-29 15-48-52" src="https://github.com/user-attachments/assets/934d63ec-9126-41c6-b2ae-0f24819a11b5" />
 <img width="1920" height="1080" alt="2025-08-29 15-49-24" src="https://github.com/user-attachments/assets/1871d2f5-0995-48fd-810f-7bff69b3bcbe" />
